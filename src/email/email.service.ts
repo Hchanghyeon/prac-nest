@@ -18,7 +18,7 @@ export class EmailService {
             service: 'Gmail',
             auth: {
                 user: 'changhyeonhw@gmail.com',
-                pass: 'gcujokpilbvcakst'
+                pass: 'test'
             }
         });
     }
