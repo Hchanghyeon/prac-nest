@@ -10,6 +10,7 @@ import { ConfigModule } from '@nestjs/config';
 import emailConfig from './config/emailConfig';
 import { validationSchema } from './config/validationSchema';
 
+console.log(`${__dirname}/config/env/.${process.env.NODE_ENV}.env`);
 @Module({
   imports: [UsersModule,
     ConfigModule.forRoot({
