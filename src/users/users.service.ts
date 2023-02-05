@@ -63,8 +63,8 @@ export class UsersService {
             user.email = email;
             user.password = password;
             user.signupVerifyToken = signupVerifyToken;
-            await this.usersRepository.save(user);
-            throw new InternalServerErrorException();
+            await manager.save(user);
+            // throw new InternalServerErrorException();
         })
     }
 
